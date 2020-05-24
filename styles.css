@@ -2,7 +2,6 @@ html {
     scroll-behavior: smooth;
 }
 
-
 body {
     margin: 0;
     background-color: #DCEDF3;
@@ -163,4 +162,31 @@ transform: rotate(70deg);
 .emphasis_word_angular {
     color: #ff9770;
     font-weight: bold;
+}
+
+.project-buttons {
+    position: relative;
+    bottom: 0;
+    margin-bottom: 20px;
+}
+
+.card p {
+    margin-bottom: 20px;
+}
+
+.btn-info {
+    background-color: #ff9770;
+    border: 2px solid black;
+    transition: 350ms;
+}
+
+.btn-info:hover {
+    background-color: coral;
+    border: 2px solid white;
+}
+
+.btn-info:focus {
+    background-color: coral;
+    border: 2px solid white;
+    box-shadow: none;
 }
