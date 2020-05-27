@@ -19,6 +19,7 @@ nav {
     height: 40vh;
     overflow: scroll;
     margin-bottom: 20px;
+    border: 2px solid white;
 }
 
 .home_section {
@@ -168,7 +169,7 @@ transform: rotate(70deg);
 }
 
 .emphasis_word_angular {
-    color: #ff6054;
+    color: #523937;
     font-weight: bold;
 }
 
