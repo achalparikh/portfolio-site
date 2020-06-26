@@ -7,64 +7,131 @@ html {
 body {
     margin: 0;
     padding: 0;
+    background-color: #edfcf8;
 }
 
-.row {
+h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Fjalla One', sans-serif;
+    letter-spacing: 3px;
 }
 
 /* Navigation */
 
 .navigation {
-    background-image: url(/assets/wavebg.svg);
-    background-size: cover;
     text-align: center;
     padding-top: 20vh;
-    height: 80vh;
+    height: 100vh;
 }
 
 .navigation h1 {
-    font-size: 3em;
-    letter-spacing: 2px;
-    font-family: 'Fjalla One', sans-serif;
+    font-size: 3rem;
+    letter-spacing: 5px;
     color: #090302;
 }
 
-.navigation ul {
-  position: relative;
-  list-style-type: none;
-  margin: 50px 0;
-  padding: 0;
-  text-align: center;
+.nav_btn {
+    padding: 0;
 }
 
-.navigation ul li {
-    display: inline;
+.blue {
+    color: #059c73;
+}
+
+.blue-bg {
+    background-color: #059c73;
+    padding: 0 10px;
     margin: 0;
-    padding: 10px;
-    transition: 150ms;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.3em;
-    color: #424B54;
+    border-radius: 15px;
 }
 
-a {
-    color: #424B54;
-}
-
-a:hover {
-    color: white;
-    text-decoration: none;
-}
-
-.navigation ul li:hover {
-    border: 1px solid black;
-    border-radius: 5px;
-    color: white;   
-    padding: 15px;
+.btn {
+    border: 2px solid black;
+    background: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    margin: 20px 10px;
     cursor: pointer;
+    letter-spacing: 2px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #059c73;
+    transition: 800ms;
+    overflow: hidden;
+    position: relative;
+}
+
+.btn:hover, .btn:focus {
+    color: #000;
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background-color: #0be6ab;
+    z-index: -1;
+    transition: 800ms;
+    top: 0;
+    border-radius: 0 0 50% 50%;
+}
+
+.btn:hover::before, .btn:focus::before {
+    height: 180%;
+}
+
+.hello {
+    margin: 5vw 0;
+    width: 100%;
+    margin-left: 10%;
+    height: auto;
 }
 
 /* About Section */
 #about {
-    height: 50vh;
+    height: 100vh;
+}
+
+#aboutMe {
+    width: 100%;
+    height: auto;
+    opacity: 70%;
+    margin: 20% 0;
+}
+
+#about_contact {
+    margin-left: 0;
+    margin-top: 0;
+}
+
+.title {
+    padding-top: 10vh;
+    font-family: 'Fjalla One', sans-serif;
+    color: #000;
+    letter-spacing: 4px;
+    font-size: 3.5em;
+    text-transform: uppercase;
+    opacity: 90%;
+}
+
+.about_text {
+    margin: 12vh 0;
+    opacity: 0;
+    transition: 700ms;
+}
+
+.about_text_appear {
+    margin: 10vh 0;
+    opacity: 1;
+}
+
+
+.about_text p {
+    font-size: 1.5em;
+}
+
+/* Skills */
+#skills {
+    height: 100vh;
 }
