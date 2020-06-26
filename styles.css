@@ -1,213 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
 html {
     scroll-behavior: smooth;
 }
 
 body {
     margin: 0;
-    background-color: #DCEDF3;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    background-color: #edfcf8;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Fjalla One', sans-serif;
     letter-spacing: 3px;
 }
 
-nav {
-    background: rgb(255,255,255);
-    background: linear-gradient(180deg, rgba(255,255,255,1) 79%, rgba(220,237,243,1) 100%, rgba(220,237,243,1) 100%);
-    padding: 15px;
+/* Navigation */
+
+.navigation {
+    text-align: center;
+    padding-top: 20vh;
+    height: 100vh;
 }
 
-.project_description {
-    height: 40vh;
-    overflow: scroll;
-    margin-bottom: 20px;
-}
-
-.home_section {
-    background-color: #273036;
-    transition: 150ms;
-}
-
-.home_section h1 {
-    font-size: 4rem;
-    padding: 10px;
-    color: #273036;
-    margin-top: 3vh;
-    margin-bottom: 0;
-    -webkit-text-stroke: 3px #ff9770;
-    letter-spacing: 4px;
-    transition: 300ms;
-}
-
-.home_section h1:hover {
-    -webkit-text-stroke: 2px #fff;
-
-}
-
-.home_section img {
-    border: 2px solid #fff;
-    border-radius: 50%;
-    height: auto;
-    width: 100%;
-}
-
-.section_two {
-    margin-top: -2vh;
-    position: relative;
-}
-
-.shapes {
-    padding: 10px;
-}
-
-.section_title {
-    padding-top: 7vh;
+.navigation h1 {
     font-size: 3rem;
-    color: #DCEDF3;
-    -webkit-text-stroke: 2px #ff9770;
-    margin-bottom: 10vh;
-    letter-spacing: 6px;
+    letter-spacing: 5px;
+    color: #090302;
 }
 
-.section_two ul {
-    list-style: none;
-    margin-bottom: 40px;
+.nav_btn {
     padding: 0;
 }
 
-.section_two li {
-    padding: 15px;
-    transition: 150ms;
-    background-color: #4a4e69;
-    color: #fff;
-    margin-top: 5px;
-    border-radius: 10px;
+.blue {
+    color: #059c73;
 }
 
-.section_two li:hover {
-    background-color: #4a4e69;
-    border-radius: 10px;
-    font-weight: bold;
-    color: #ff9770;  
-    letter-spacing: 4px;  
-}
-
-#square {
-    width: 100px;
-    height: 100px;
-    background: #22223b;
-    position: absolute;
-    opacity: 0.1;
-    top: 0%;
-    left: 70%;
-    transform: rotate(20deg);
-    transition: 150ms;
-}
-
-#square1 {
-width: 100px;
-height: 100px;
-background: #22223b;
-position: absolute;
-opacity: 0.1;
-top: 80%;
-left: 10%;
-transform: rotate(70deg);
-}
-
-#square2 {
-    width: 100px;
-    height: 100px;
-    background: #22223b;
-    position: absolute;
-    opacity: 0.1;
-    top: 70%;
-    left: 85%;
-    transform: rotate(80deg);
-}
-
-#square3 {
-    width: 100px;
-    height: 100px;
-    background: #22223b;
-    position: absolute;
-    opacity: 0.1;
-    top: 0%;
-    left: 20%;
-    transform: rotate(60deg);
-    transition: 150ms;
-}
-
-#square:hover {
-    transform: rotate(60deg);
-}
-
-#square3:hover {
-    transform: rotate(100deg);
-}
-
-.card {
-    text-align: left;
-    width: 100%;
-    height: 100%;
-    border-radius: 4px;
-    padding: 25px;
-    background: rgb(34, 34, 59, 0.8);
-    color: #fff;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-    transition: 200ms;
-}
-
-.card h4 {
-    margin-bottom: 20px;
-    border-bottom: 2px solid #ff9770;
-    padding: 10px;
-    padding-left: 0;
-}
-
-.margin-top-10 {
-    margin-top: 10px;
-}
-
-.emphasis_word_angular {
-    color: #ff6054;
-    font-weight: bold;
-}
-
-.project-buttons {
-    position: relative;
-    bottom: 0;
-    margin-bottom: 20px;
-}
-
-.card p {
-    margin-bottom: 20px;
-}
-
-.btn-danger {
-    margin-top: 10px;
-    background-color: #ff9770;
-    border: 2px solid black;
-    transition: 350ms;
-}
-
-.btn-danger:hover {
-    background-color: coral;
-    border: 2px solid white;
-}
-
-.btn-danger:focus {
-    background-color: coral;
-    border: 2px solid white;
-    box-shadow: none;
-}
-
-.contact h3 {
+.blue-bg {
+    background-color: #059c73;
+    padding: 0 10px;
     margin: 0;
+    border-radius: 15px;
 }
 
-.contact button {
-    background: transparent;
-    color: white;
-    border: none;
-    height: 100%;
+.btn {
+    border: 2px solid black;
+    background: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    margin: 20px 10px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #059c73;
+    transition: 800ms;
+    overflow: hidden;
+    position: relative;
+}
+
+.btn:hover, .btn:focus {
+    color: #000;
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    left: 0;
     width: 100%;
+    height: 0%;
+    background-color: #0be6ab;
+    z-index: -1;
+    transition: 800ms;
+    top: 0;
+    border-radius: 0 0 50% 50%;
+}
+
+.btn:hover::before, .btn:focus::before {
+    height: 180%;
+}
+
+.hello {
+    margin: 5vw 0;
+    width: 100%;
+    margin-left: 10%;
+    height: auto;
+}
+
+/* About Section */
+#about {
+    height: 100vh;
+}
+
+#aboutMe {
+    width: 100%;
+    height: auto;
+    opacity: 70%;
+    margin: 20% 0;
+}
+
+#about_contact {
+    margin-left: 0;
+    margin-top: 0;
+}
+
+.title {
+    padding-top: 10vh;
+    font-family: 'Fjalla One', sans-serif;
+    color: #000;
+    letter-spacing: 4px;
+    font-size: 3.5em;
+    text-transform: uppercase;
+    opacity: 90%;
+}
+
+.about_text {
+    margin: 12vh 0;
+    opacity: 0;
+    transition: 700ms;
+}
+
+.about_text_appear {
+    margin: 10vh 0;
+    opacity: 1;
+}
+
+
+.about_text p {
+    font-size: 1.5em;
+}
+
+/* Skills */
+#skills {
+    height: 100vh;
 }
