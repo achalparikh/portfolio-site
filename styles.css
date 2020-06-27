@@ -8,11 +8,17 @@ body {
     margin: 0;
     padding: 0;
     background-color: #edfcf8;
+    scroll-snap-type: mandatory;
+    overflow-y: scroll;
 }
 
 h1, h2, h3, h4, h5, h6, p {
     font-family: 'Fjalla One', sans-serif;
     letter-spacing: 3px;
+}
+
+section {
+    min-height: 100vh;
 }
 
 /* Navigation */
@@ -113,6 +119,7 @@ nav {
 }
 
 .title {
+    scroll-snap-align: start;
     padding-top: 10vh;
     font-family: 'Fjalla One', sans-serif;
     color: #000;
