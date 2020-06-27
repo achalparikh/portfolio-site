@@ -16,6 +16,12 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 /* Navigation */
+nav {
+}
+
+#name {
+    font-size: 4em;
+}
 
 .navigation {
     text-align: center;
@@ -151,6 +157,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .progress-bar {
     background-color: #059c73;
+    transition: 1000ms all ease-in-out;
 }
 
 /* PROJECTS */
