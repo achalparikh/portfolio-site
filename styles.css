@@ -161,13 +161,6 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .card {
-    background: #fff;
-    border: 2px solid #059c73;
-    padding-right: 0;
-}
-
-.margin-top-25 {
-    margin-top: 15px;
 }
 
 .card-body button {
@@ -175,13 +168,29 @@ h1, h2, h3, h4, h5, h6, p {
     font-size: 1em;
     padding: 10px;
     z-index: 2;
+    padding: 15px;
 }
 
-.card-img {
-    width: auto;
-    height: auto;
-    margin: 30% 10%;
+.card-group {
+    margin-top: 5vh;
+}
+
+.card-title {
+    padding-bottom: 10px;
+    border-bottom: 2px solid black;
+}
+
+.card-image img {
     opacity: 70%;
+    width: 30vw;
+    height: 30vh;
+}
+
+.projects-img {
+    width: 4vw;
+    height: auto;
+    margin-right: 3px;
+    opacity: 80%;
 }
 
 /* Contact */
