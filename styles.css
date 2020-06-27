@@ -20,7 +20,7 @@ h1, h2, h3, h4, h5, h6, p {
 .navigation {
     text-align: center;
     padding-top: 20vh;
-    height: 100vh;
+    height: auto;
 }
 
 .navigation h1 {
@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5, h6, p {
     color: #059c73;
 }
 
-.blue-bg {
+.blue-bg, .emphasis_word_angular {
     background-color: #059c73;
     padding: 0 10px;
     margin: 0;
@@ -88,9 +88,10 @@ h1, h2, h3, h4, h5, h6, p {
     height: auto;
 }
 
+
 /* About Section */
 #about {
-    height: 100vh;
+    height: auto;
 }
 
 #aboutMe {
@@ -133,5 +134,51 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* Skills */
 #skills {
-    height: 100vh;
+    height: auto;
+}
+
+.bars {
+    margin-top: 5vh;
+}
+
+.bars h4 {
+    margin-top: 30px;
+}
+
+.skill_text_appear {
+    opacity: 1;
+}
+
+.progress-bar {
+    background-color: #059c73;
+}
+
+/* PROJECTS */
+
+.cards {
+    margin-top: 5vh;
+    margin-left: 0;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid black;
+    padding-right: 0;
+}
+
+.margin-top-25 {
+    margin-top: 15px;
+}
+
+.card-body button {
+    margin-left: 0;
+    font-size: 1em;
+    padding: 10px;
+}
+
+.card-img {
+    width: auto;
+    height: auto;
+    margin: 30% 10%;
+    opacity: 70%;
 }
